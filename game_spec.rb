@@ -14,16 +14,16 @@ class Testgame < Minitest::Test
 
   def test_play__rock_win
     result = @game1.game
-    assert_equal("rock wins", result)
+    assert_equal("rock", result)
   end
 
   def test_play__scissors_win
     result = @game2.game
-    assert_equal("scissors wins", result)
+    assert_equal("scissors", result)
   end
-  
+
   def test_play__paper_win
     result = @game3.game
-    assert_equal("paper wins", result)
+    assert_equal("paper", result)
   end
 end
